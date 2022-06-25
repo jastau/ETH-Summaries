@@ -1,0 +1,6 @@
+*.aux
+*.toc
+*.out
+*.log
+*.bak
+*.tex.bak
