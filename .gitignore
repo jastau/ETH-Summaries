@@ -4,3 +4,5 @@
 *.log
 *.bak
 *.tex.bak
+*.dvi
+*.ini
