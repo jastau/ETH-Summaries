@@ -385,7 +385,7 @@ Returns all possible combinations of elements in the first and second relation.
 \item \textbf{Renaming: $\rho_{B_1, ..., B_n}(R)$}\\
 Changes the name of the attributes of $R$ to $B_1, ..., B_n$.
 \item \textbf{Natural Join: $\Join$}\\
-$R_1(A,B) \Join R_2(C,D) = \Pi_{A,B,C}(\sigma_{R_1.B=R_2.B}(R_1 \times R_2))$\\
+$R_1(A,B) \Join R_2(B, C) = \Pi_{A,B,C}(\sigma_{R_1.B=R_2.B}(R_1 \times R_2))$\\
 Step 1 Selection - check equality on all common attributes\\
 Step 2 Projection - eliminate duplicated common attributes\\
 Corner Cases: \begin{itemize}
@@ -393,7 +393,7 @@ Corner Cases: \begin{itemize}
 \item Share all attributes: $R \Join S = R \cap S$
 \end{itemize}
 \item \textbf{Theta Join: $\Join_\theta$}\\
-$R_1 \Join_\theta = \sigma_\theta(R_1 \times R_2)$\\
+$R_1 \Join_\theta R_2 = \sigma_\theta(R_1 \times R_2)$\\
 Joins two relations on a given condition $\theta$.
 \item \textbf{Equi-Join: $\Join_{A=B}$}\\
 $R_1 \Join_{A=B} R_2 = \sigma_{A=B}(R_1 \times R_2)$\\
