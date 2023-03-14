@@ -710,7 +710,7 @@ DELTE FROM products WHERE obsoletion_date = 'today'
 \subsubsection{Snapshot Semantics}\
 How does SQL deal with this?
 \begin{lstlisting}[language=SQL]
-DELETE FORM requires WHERE prerequisite IN 
+DELETE FROM requires WHERE prerequisite IN 
 (SELECT follow-up FROM requires);
 \end{lstlisting}
 SQL conducts the \textit{DELETE} in two phases.

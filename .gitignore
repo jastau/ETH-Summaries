@@ -6,3 +6,7 @@
 *.tex.bak
 *.dvi
 *.ini
+*.fls
+*.synctex.*
+*.fdb_latexmk
+
